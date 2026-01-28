@@ -148,12 +148,15 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input[type="email"] {
+/* UPDATED: Applies to both Email and Password fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
   width: 100%;
-  max-width: 400px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
 }
 
 /* 7. FOOTER */
